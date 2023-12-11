@@ -90,5 +90,6 @@ def preprocessing(path_data, csv_path_out, is_train = True):
         df.to_csv(csv_path_out)
         
 def processing_answer(text:str):
-    pass
+    answer = text.split('\n')
+    return answer[0]
         
